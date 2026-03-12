@@ -234,9 +234,9 @@ def main():
         )
 
         sample_every_n_frames = st.slider("Проверять каждый N-й кадр", 1, 30, 10)
-        conf = st.slider("Confidence", 0.01, 0.95, 0.10, 0.01)
+        conf = st.slider("Уверенность", 0.01, 0.95, 0.10, 0.01)
         iou = st.slider("IoU", 0.01, 0.95, 0.40, 0.01)
-        imgsz = st.select_slider("Image size", options=[320, 384, 480, 640], value=384)
+        imgsz = st.select_slider("Размер входного изображения", options=[320, 384, 480, 640], value=384)
         output_size = st.slider("Масштаб выходного видео", 0.2, 1.0, 0.5, 0.1)
         add_margin_frames = st.slider("Добавить кадров по краям фрагмента", 0, 30, 5)
 
